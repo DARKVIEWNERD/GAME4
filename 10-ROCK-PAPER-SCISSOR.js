@@ -70,7 +70,7 @@ function playGame(PlayerMove){
         result='WiN!';
 
       }
-      else if(PlayerMove==='paper'){
+      else if(computerMove==='paper'){
         result='TIE!';
         
       }
