@@ -32,11 +32,11 @@ function pickComputerMove(){//get random moves from the computer using math.rand
     }
 
     if(randomNumber >=1/3 && randomNumber <2/3){
-      computerMove='Paper';
+      computerMove='paper';
       
     }
     if(randomNumber>=2/3 && randomNumber <1){
-      computerMove='Scissors';
+      computerMove='scissors';
     }
     return computerMove;
 
@@ -50,47 +50,47 @@ function playGame(PlayerMove){
     let result='';
     const computerMove=pickComputerMove();
 
-    if(PlayerMove==='Scissors'){
+    if(PlayerMove==='scissors'){
 
       if(computerMove==='rock'){
       result='LOSE!';
       }
-      else if(computerMove==='Paper'){
+      else if(computerMove==='paper'){
         result='WIN!';
         
       }
-      else if(computerMove==='Scissors'){
+      else if(computerMove==='scissors'){
         result='TIE!';
       }
     }
 
-    else if (PlayerMove==='Paper'){           
+    else if (PlayerMove==='paper'){           
 
       if(computerMove==='rock'){
         result='WiN!';
 
       }
-      else if(PlayerMove==='Paper'){
+      else if(PlayerMove==='paper'){
         result='TIE!';
         
       }
-      else if(computerMove==='Scissors'){
+      else if(computerMove==='scissors'){
         result='LOSE!';
       }
 
     }
 
-    else if(PlayerMove==='Rock'){
+    else if(PlayerMove==='rock'){
 
     if(computerMove==='rock'){
       result='TIE!';
 
     }
-    else if(computerMove==='Paper'){
+    else if(computerMove==='paper'){
       result='LOSE!';
       
     }
-    else if(computerMove==='Scissors'){
+    else if(computerMove==='scissors'){
       result='WIN!';
     }
 
