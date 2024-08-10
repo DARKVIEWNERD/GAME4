@@ -67,7 +67,7 @@ function playGame(PlayerMove){
     else if (PlayerMove==='paper'){           
 
       if(computerMove==='rock'){
-        result='WiN!';
+        result='WIN!';
 
       }
       else if(computerMove==='paper'){
